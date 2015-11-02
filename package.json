@@ -15,15 +15,9 @@
   "bugs": {
     "url": "https://github.com/sstephenson/bats/issues"
   },
-  "scripts": [
-    "libexec/bats",
-    "libexec/bats-exec-suite",
-    "libexec/bats-exec-test",
-    "libexec/bats-format-tap-stream",
-    "libexec/bats-preprocess",
-    "bin/bats"
-  ],
-  "install": "./install.sh ${PREFIX:-/usr/local}",
+  "scripts": {
+    "test": "./bin/bats test"
+  },
   "main": "index.js",
   "directories": {
     "bin": "bin",
